@@ -711,7 +711,9 @@ img {
 .modal-form-contain {
   margin-bottom: 8px;
 }
-
+.modal-text-input {
+  margin-bottom: 16px;
+}
 .modal-form-label {
   font-size: 12px;
   line-height: 1.17;
@@ -746,7 +748,7 @@ img {
 .modal-form-comment:focus {
   border-color: #4d5ae5;
 }
-.modal-form-input:checked {
+input:checked {
   background-color: var(--#404bbf);
   border: none;
   fill: var(--#F4F4FD);
@@ -829,9 +831,9 @@ img {
   justify-content: space-between;
 }
 .button-form {
-  display: flex;
-  min-width: 165px;
-  height: 40px;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
@@ -844,6 +846,7 @@ img {
   background-color: #4d5ae5;
   border: none;
   border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-form-icon {
   fill: none;
