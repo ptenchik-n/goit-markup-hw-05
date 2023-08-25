@@ -586,6 +586,9 @@ img {
 .client-logo {
   fill: currentColor;
 }
+.social-media-class {
+  margin-right: 80px;
+}
 
 /* Modal window */
 .backdrop {
@@ -749,15 +752,6 @@ img {
 .modal-form-comment:focus,
 .checkbox-modal:focus {
   border-color: #4d5ae5;
-}
-
-.checkbox-container::placeholder {
-  opacity: 0;
-  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
-}
-.checkbox-container:focus::placeholder {
-  opacity: 1;
-  transition-delay: 0s;
 }
 
 .checkbox-modal {
