@@ -5,6 +5,7 @@
   --clasic-background-color: #f4f4fd;
   --footer-color: #2e2f42;
   --button-color: #4d5ae5;
+  --label-color: #8e8f99;
 }
 h1,
 h2,
@@ -705,7 +706,7 @@ img {
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--#2E2F42);
+  color: var(--footer-color);
   margin-bottom: 16px;
 }
 .modal-form-contain {
@@ -756,6 +757,8 @@ img {
 .modal-form-comment {
   width: 100px;
   height: 120px;
+  padding: 8px 16px;
+  margin-top: 4px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -777,7 +780,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--#8e8f99);
+  color: var(--label-color);
 }
 
 .modal-form-desc {
@@ -794,7 +797,25 @@ img {
   fill: transparent;
   margin-right: 8px;
 }
-
+.modal-btn {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #4d5ae5;
+  border: none;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+}
 .modal-form-link {
   color: var(--iris, #4d5ae5);
   text-decoration: underline;
@@ -829,9 +850,9 @@ img {
   justify-content: space-between;
 }
 .button-form {
-  display: block;
-  min-width: 169px;
-  height: 56px;
+  display: flex;
+  min-width: 165px;
+  height: 40px;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
