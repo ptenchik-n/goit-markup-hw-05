@@ -280,8 +280,8 @@ address {
   color: #ffffff;
   max-width: 496px;
   height: 120px;
-  margin-bottom: 48px;
   margin: 0 auto;
+  margin-bottom: 48px;
   font-weight: 700;
 }
 .valuables {
@@ -746,8 +746,18 @@ img {
 }
 
 .modal-form-input:focus,
-.modal-form-comment:focus {
+.modal-form-comment:focus,
+.checkbox-modal:focus {
   border-color: #4d5ae5;
+}
+
+.checkbox-container::placeholder {
+  opacity: 0;
+  color: var(--navyblue-modal, rgba(46, 47, 66, 0.4));
+}
+.checkbox-container:focus::placeholder {
+  opacity: 1;
+  transition-delay: 0s;
 }
 
 .checkbox-modal {
@@ -822,7 +832,7 @@ img {
   border: none;
   border-radius: 4px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin: 0;
+  margin: 0 auto;
 }
 .modal-form-link {
   color: var(--iris, #4d5ae5);
@@ -854,7 +864,7 @@ img {
 }
 /* Footer form */
 .footer-bottom {
-  display: flex;
+  margin-right: 80px;
   justify-content: space-between;
 }
 .button-form {
