@@ -749,10 +749,17 @@ img {
 .modal-form-comment:focus {
   border-color: #4d5ae5;
 }
-.checkbox:checked + .modal-form-agreement > .modal-form-desc {
+
+.checkbox-modal {
+  width: 16px;
+  height: 16px;
+  stroke-width: 1px;
+}
+
+.checkbox-modal:checked + .modal-form-agreement > .modal-form-desc {
   background-color: #404bbf;
   border: none;
-  fill: #f4f4fd;
+  fill: var(--clasic-background-color);
 }
 .modal-form-comment {
   width: 100px;
@@ -795,8 +802,9 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  margin-right: 8px;
+  margin-right: 5px;
 }
+
 .modal-btn {
   display: block;
   min-width: 169px;
